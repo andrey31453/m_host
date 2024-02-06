@@ -21,7 +21,7 @@ const App = () => {
       <hr />
 
       <Suspense fallback={'loading...'}>
-        <App11>hgdfjkghkjd</App11>
+        <App11>hgdfjkghkjddgdfgfd</App11>
         <App12 />
       </Suspense>
 
