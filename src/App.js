@@ -18,12 +18,10 @@ const App = () => {
         <h1>Host</h1>
       </div>
 
-      <hr />
-
-      <Suspense fallback={'loading...'}>
+      {/* <Suspense fallback={'loading...'}>
         <App11>hgdfjkghkjddgdfgfd</App11>
         <App12 />
-      </Suspense>
+      </Suspense> */}
 
       <hr />
 
