@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { ModuleFederationPlugin } = require('webpack').container
 const path = require('path')
-require('dotenv').config({ path: '../.env' })
+require('dotenv').config({ path: './.env' })
 
 console.log(process.env)
 

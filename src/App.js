@@ -1,5 +1,7 @@
 import React, { Suspense } from 'react'
 import init from 'app1/init'
+import styles from 'app1/styles'
+console.log('styles: ', styles)
 
 const App11 = React.lazy(() => import('app1/App11'))
 const App12 = React.lazy(() => import('app1/App12'))
@@ -8,11 +10,12 @@ const App = () => {
   return (
     <div>
       <div
+        className={styles.t}
         style={{
           margin: '10px',
           padding: '10px',
           textAlign: 'center',
-          backgroundColor: 'greenyellow',
+          // backgroundColor: 'greenyellow',
         }}
       >
         <h1>Host</h1>
