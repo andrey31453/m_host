@@ -9,12 +9,12 @@ class Printer {
     this.context = ctx
   }
 
-  print() {
+  log() {
     console.log(this.context.value)
   }
 }
 
-class DivContidion {
+class Contidion {
   constructor(divider) {
     this.divider = divider
   }
@@ -24,7 +24,7 @@ class DivContidion {
   }
 }
 
-class AddStrategy {
+class Strategy {
   constructor(conditions_or_strategies) {
     this.conditions = conditions_or_strategies
   }
@@ -38,10 +38,10 @@ class AddStrategy {
   }
 }
 
-class TagNumRule {
+class Rule {
   constructor(tag, strategy) {
+    this.tag = tag
     this.strategy = strategy
-    this.tag = tag // jfdslkjlkdsjlkfjslkjlkjlk
   }
 
   is_success(num) {
@@ -49,7 +49,7 @@ class TagNumRule {
   }
 }
 
-class TagNumRulesCollection {
+class Collection {
   constructor(tags) {
     this.tags = tags
   }
@@ -65,17 +65,28 @@ class TagNumRulesCollection {
   }
 }
 
-const num_tags = new TagNumRulesCollection([
-  new TagNumRule(
-    new Tag('fizzbuzz'),
-    new AddStrategy([new DivContidion(3), new DivContidion(5)])
-  ),
-  new TagNumRule(new Tag('fizz'), new AddStrategy([new DivContidion(3)])),
-  new TagNumRule(new Tag('buzz'), new AddStrategy([new DivContidion(5)])),
-])
+class Fizz_Buzz {
+  constructor(max_num, collection) {
+    this.max_num = max_num
+    this.collection = collection
+  }
+
+  do() {
+    for (let i = 1; i < this.max_num; i++) {
+      new Printer(this.collection.find(i, new Tag(i))).log()
+    }
+  }
+}
 
 export const fizz_buzz = (max_num) => {
-  for (let i = 1; i < max_num; i++) {
-    new Printer(num_tags.find(i, new Tag(i))).print()
-  }
+  const collection = new Collection([
+    new Rule(
+      new Tag('fizzbuzz'),
+      new Strategy([new Contidion(3), new Contidion(5)])
+    ),
+    new Rule(new Tag('fizz'), new Strategy([new Contidion(3)])),
+    new Rule(new Tag('buzz'), new Strategy([new Contidion(5)])),
+  ])
+
+  new Fizz_Buzz(max_num, collection).do()
 }
