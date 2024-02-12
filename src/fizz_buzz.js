@@ -14,7 +14,7 @@ class Printer {
   }
 }
 
-class Contidion {
+class Divider_Contidion {
   constructor(divider) {
     this.divider = divider
   }
@@ -50,14 +50,14 @@ class Rule {
 }
 
 class Collection {
-  constructor(tags) {
-    this.tags = tags
+  constructor(rules) {
+    this.rules = rules
   }
 
   find(num, default_value) {
-    for (let i in this.tags) {
-      if (this.tags[i].is_success(num)) {
-        return this.tags[i].tag
+    for (let i in this.rules) {
+      if (this.rules[i].is_success(num)) {
+        return this.rules[i].tag
       }
     }
 
