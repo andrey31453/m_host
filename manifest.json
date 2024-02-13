@@ -1,0 +1,7 @@
+{
+  "name": "host",
+  "type": "react",
+  "exposes": [],
+  "remotes": [],
+  "shared": []
+}
