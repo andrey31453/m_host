@@ -1,8 +1,23 @@
+# не переписывать
+# данный файл сгенерирован автоматически
+
 /**/package-lock.json
 /**/node_modules
 /**/*.DS_Store
+/.db
+/.archive
+
+# compiled output
 /**/dist
 
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # IDEs and editors
 /.idea

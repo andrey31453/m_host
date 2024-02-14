@@ -1,49 +1,11 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { ModuleFederationPlugin } = require('webpack').container
-const path = require('path')
-require('dotenv').config({ path: './.env' })
+// не переписывать
+// данный файл сгенерирован автоматически
 
-console.log(process.env)
+const { merge } = require('webpack-merge')
 
-module.exports = {
-  entry: './src/index',
-  mode: 'development',
-  devServer: {
-    static: path.join(__dirname, 'dist'),
-    port: process.env.host_port,
-  },
-  output: {
-    publicPath: 'auto',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-        options: {
-          presets: ['@babel/preset-react'],
-        },
-      },
-    ],
-  },
-  plugins: [
-    new ModuleFederationPlugin({
-      name: 'host',
-      remotes: {
-        app1: 'app1@http://localhost:4002/remoteEntry.js',
-      },
-      shared: {
-        'react': {
-          singleton: true,
-        },
-        'react-dom': {
-          singleton: true,
-        },
-      },
-    }),
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-  ],
-}
+const template = require('./webpack.config.template')
+const generate = require('../generate/webpack.config.generate_from_manifest')
+const local = require('./webpack.config.local')
+
+module.exports = (props) =>
+  merge(template(props), generate(props), local(props))

@@ -1,12 +1,5 @@
 # не переписывать
 # данный файл сгенерирован автоматически
 
-FROM node:20.10-alpine
-ARG workdir
-
-WORKDIR $workdir
-COPY package*.json .
-RUN npm i
-COPY . .
-
-CMD npm run dev
+node ./setup/src/preset.js
+# docker-compose -f ./src/docker/dev.docker-compose.yml up
