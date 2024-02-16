@@ -1,4 +1,12 @@
 # не переписывать
 # данный файл сгенерирован автоматически
-node ./setup/src/preset.js
-# docker-compose -f ./src/docker/dev.docker-compose.yml up
+version: '3'
+
+services:
+	
+	host:
+		build:
+		ports:
+			- 4000:4000
+	
+		
