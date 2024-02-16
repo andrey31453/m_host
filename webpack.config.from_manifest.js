@@ -16,7 +16,7 @@ module.exports = {
 				'./t3': src + 'a3'
 			},
 			remotes: {
-				'./r1': 'http://localhost:8001/remote_entry.js'
+				'./r11': 'http://localhost:8001/remote_entry.js'
 			},
       shared: {
 				'react': { singleton: true },
