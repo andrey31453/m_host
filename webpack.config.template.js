@@ -1,5 +1,6 @@
 // не переписывать
 // данный файл сгенерирован автоматически
+
 const html_webpack = require('html-webpack-plugin')
 const { ModuleFederationPlugin: module_federation } =
   require('webpack').container

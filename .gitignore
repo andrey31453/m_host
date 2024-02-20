@@ -1,15 +1,15 @@
 # не переписывать
 # данный файл сгенерирован автоматически
+
 /**/package-lock.json
 /**/node_modules
 /**/*.DS_Store
 /.db
-/.archive
 
 # compiled output
 /**/dist
 
-# Logs
+# logs
 logs
 *.log
 npm-debug.log*
@@ -18,18 +18,11 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# IDEs and editors
+# ide-s
 /.idea
 .project
 .classpath
 .c9/
 *.launch
-.settings/
 *.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+/.vscode
