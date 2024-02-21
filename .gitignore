@@ -29,7 +29,6 @@ lerna-debug.log*
 
 # generate
 .eslintrc
-.gitignore
 .prettierignore
 .prettierrc
 dev.sh
@@ -38,6 +37,5 @@ test.json
 webpack.config.js
 webpack.config.local.js
 webpack.config.template.js
-readme.md
 dev.docker-compose.yml
 webpack.config.from_manifest.js
