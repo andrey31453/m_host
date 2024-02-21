@@ -27,4 +27,3 @@ lerna-debug.log*
 *.sublime-workspace
 /.vscode
 
-dockerfile
