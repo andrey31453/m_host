@@ -27,3 +27,17 @@ lerna-debug.log*
 *.sublime-workspace
 /.vscode
 
+# generate
+.eslintrc
+.gitignore
+.prettierignore
+.prettierrc
+dev.sh
+dockerfile
+test.json
+webpack.config.js
+webpack.config.local.js
+webpack.config.template.js
+readme.md
+dev.docker-compose.yml
+webpack.config.from_manifest.js
