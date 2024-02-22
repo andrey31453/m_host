@@ -32,11 +32,11 @@ lerna-debug.log*
 .eslintrc
 .prettierignore
 .prettierrc
+dev.dockerfile
 dev.sh
-dockerfile
 test.json
 webpack.config.js
 webpack.config.local.js
 webpack.config.template.js
-dev.docker-compose.yml
 webpack.config.from_manifest.js
+dev.docker-compose.yml
