@@ -29,7 +29,7 @@ lerna-debug.log*
 
 # generate
 src/.bd/file
-src/.bd/file
+src/.bd/dir
 .eslintrc
 .prettierignore
 .prettierrc
@@ -37,6 +37,9 @@ dev.dockerfile
 dev.sh
 test.json
 test1/test.json
+test1/test1/test.json
+test2/test.json
+test2/test2/test.json
 webpack.config.js
 webpack.config.local.js
 webpack.config.template.js
