@@ -1,11 +1,10 @@
 # не переписывать
 # данный файл сгенерирован автоматически
 
-# default
-package-lock.json
-node_modules
+/**/package-lock.json
+/**/node_modules
 
-# bd
+# db
 /.db
 
 # mac
@@ -32,3 +31,41 @@ lerna-debug.log*
 *.sublime-workspace
 /.vscode
 
+# generate
+./src/.bd
+../host/.eslintrc
+../setup/.eslintrc
+../apps/app1/.eslintrc
+../host/.prettierignore
+../setup/.prettierignore
+../apps/app1/.prettierignore
+../host/.prettierrc
+../setup/.prettierrc
+../apps/app1/.prettierrc
+../host/dev.dockerfile
+../apps/app1/dev.dockerfile
+../dev.sh
+../host/dev.sh
+../setup/dev.sh
+../apps/app1/dev.sh
+../host/test.json
+../apps/app1/test.json
+../host/test1/test.json
+../apps/app1/test1/test.json
+../host/test1/test1/test.json
+../apps/app1/test1/test1/test.json
+../host/test2/test.json
+../apps/app1/test2/test.json
+../host/test2/test2/test.json
+../apps/app1/test2/test2/test.json
+../host/webpack.config.js
+../apps/app1/webpack.config.js
+../host/webpack.config.local.js
+../apps/app1/webpack.config.local.js
+../host/webpack.config.template.js
+../apps/app1/webpack.config.template.js
+../host/webpack.config.from_manifest.js
+../apps/app1/webpack.config.from_manifest.js
+../dev.docker-compose.yml
+../host/dev.docker-compose.yml
+../apps/app1/dev.docker-compose.yml
