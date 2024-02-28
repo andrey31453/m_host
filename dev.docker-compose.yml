@@ -1,0 +1,17 @@
+# не переписывать
+# данный файл сгенерирован автоматически
+
+version: '3'
+
+services:s_host:
+		build:
+			context: ./
+			dockerfile: dev.dockerfile
+			args:
+				workdir: /mf/host
+		ports:
+			- 8001:8001
+		volumes:
+			- ./:/mf/host
+			- /mf/host/node_modules
+		restart: always
