@@ -3,7 +3,8 @@
 
 version: '3'
 
-services:s_host:
+services:
+	s_host:
 		build:
 			context: ./
 			dockerfile: dev.dockerfile

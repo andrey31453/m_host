@@ -48,6 +48,8 @@ lerna-debug.log*
 ../host/dev.sh
 ../setup/dev.sh
 ../apps/app1/dev.sh
+../host/src/test.json
+../apps/app1/src/test.json
 ../host/test.json
 ../apps/app1/test.json
 ../host/test1/test.json
@@ -69,3 +71,8 @@ lerna-debug.log*
 ../dev.docker-compose.yml
 ../host/dev.docker-compose.yml
 ../apps/app1/dev.docker-compose.yml
+../host/tsconfig.json
+../setup/tsconfig.json
+../apps/app1/tsconfig.json
+../host/package.json
+../apps/app1/package.json
