@@ -1,3 +1,10 @@
-version: '3'
-
-services:
+{
+	"scripts": {
+		"init": "ts-node ./src/init.ts"
+	},
+	
+	
+	"name": "host",
+	"version": "1.0.0",
+	"license": "MIT"
+}
