@@ -9,7 +9,7 @@
 			"~bd": ["./src/./src/bd"], 
 			"~modules": ["./src/./src/modules"], 
 			"~utils": ["./src/./src/utils"], 
-			"~fs": ["./src/./src/fs"], 
+			"~fs": ["./src/./src/fs"]
 		}, 
 		"moduleResolution": "node",
 		"noImplicitAny": true,
