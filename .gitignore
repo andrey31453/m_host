@@ -53,16 +53,12 @@ lerna-debug.log*
 ../setup/test.json
 ../apps/app1/test.json
 ../host/webpack.config.js
-../setup/webpack.config.js
 ../apps/app1/webpack.config.js
 ../host/webpack.config.local.js
-../setup/webpack.config.local.js
 ../apps/app1/webpack.config.local.js
 ../host/webpack.config.template.js
-../setup/webpack.config.template.js
 ../apps/app1/webpack.config.template.js
 ../host/webpack.config.from_manifest.js
-../setup/webpack.config.from_manifest.js
 ../apps/app1/webpack.config.from_manifest.js
 ../dev.docker-compose.yml
 ../host/dev.docker-compose.yml
