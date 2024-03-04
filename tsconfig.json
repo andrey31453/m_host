@@ -2,15 +2,15 @@
 	"compileOnSave": false,
 	"compilerOptions": {
 		"paths": {
-			"~types": ["./src/./src/types"], 
-			"~config": ["./src/./src/config"], 
-			"~decorators": ["./src/./src/decorators"], 
-			"~file_data_creators": ["./src/./src/file_data_creators"], 
-			"~bd": ["./src/./src/bd"], 
-			"~modules": ["./src/./src/modules"], 
-			"~utils": ["./src/./src/utils"], 
-			"~fs": ["./src/./src/fs"]
-		}, 
+"~types": ["./src/./src/types"],
+"~config": ["./src/./src/config"],
+"~decorators": ["./src/./src/decorators"],
+"~file_data_creators": ["./src/./src/file_data_creators"],
+"~bd": ["./src/./src/bd"],
+"~modules": ["./src/./src/modules"],
+"~utils": ["./src/./src/utils"],
+"~fs": ["./src/./src/fs"]
+}, 
 		"moduleResolution": "node",
 		"noImplicitAny": true,
 		"removeComments": true,
