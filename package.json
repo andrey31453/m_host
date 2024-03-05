@@ -1,10 +1,16 @@
 {
 	"scripts": {
-		"init": "ts-node ./src/init.ts"
-	},
+"dev": "webpack serve --env dev",
+"build": "webpack"
+}, 
 	
-	
-
+	"devDependencies": {
+"react": "^4.2.0",
+"react-dom": "^4.2.0",
+"webpack-dev-server": "^4.11.1",
+"copy-webpack-plugin": "^11.0.0",
+"html-webpack-plugin": "^5.5.0"
+}, 
 	"name": "host",
 	"version": "1.0.0",
 	"license": "MIT"
