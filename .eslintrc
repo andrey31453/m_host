@@ -6,7 +6,7 @@
 		"node": true
 	},
 	"extends": [
-		"eslint:recommended",
+		"eslint:recommendfdsfdssfed",
 		"plugin:react/recommended",
 		"google",
 		"plugin:prettier/recommended",
