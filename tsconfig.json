@@ -2,15 +2,24 @@
 	"compileOnSave": false,
 	"compilerOptions": {
 		"paths": {
-"~types": ["./src/./src/types"],
-"~config": ["./src/./src/config"],
-"~decorators": ["./src/./src/decorators"],
-"~file_data_creators": ["./src/./src/file_data_creators"],
-"~bd": ["./src/./src/bd"],
-"~modules": ["./src/./src/modules"],
-"~utils": ["./src/./src/utils"],
-"~fs": ["./src/./src/fs"]
-}, 
+			"~types": ["./src/entities/types"],
+			"~config": ["./src/./src/config"],
+			"~decorators": ["./src/./src/decorators"],
+			"~file_data_creators": ["./src/./src/file_data_creators"],
+			"~bd": ["./src/./src/bd"],
+			"~modules": ["./src/./src/modules"],
+			"~utils": ["./src/./src/utils"],
+			"~fs": ["./src/./src/fs"],
+			"~api": ["./src/entities/api"],
+			"~consts": ["./src/entities/consts"],
+			"~entities": ["./src/entities"],
+			"~features": ["./src/features"],
+			"~libs": ["./src/shared/libs"],
+			"~store": ["./src/processes/store"],
+			"~styles": ["./src/shared/styles"],
+			"~ui": ["./src/shared/ui"],
+			"~widgets": ["./src/widgets"]
+		},
 		"moduleResolution": "node",
 		"noImplicitAny": true,
 		"removeComments": true,
@@ -19,7 +28,9 @@
 		"declaration": true,
 		"isolatedModules": true,
 		"downlevelIteration": true,
-		"outDir": "dist"
+		"outDir": "dist",
+		"target": "ES2016",
+		"lib": ["es2019", "dom"]
 	},
 	"ts-node": {
 		"require": ["tsconfig-paths/register"]
