@@ -38,11 +38,12 @@ lerna-debug.log*
 .prettierrc.json
 dev.dockerfile
 dev.sh
-test.json
 webpack.config.js
 webpack.config.local.js
 webpack.config.template.js
 webpack.config.from_manifest.js
 dev.docker-compose.yml
+tsconfig.json
+package.json
 tsconfig.json
 package.json
