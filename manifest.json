@@ -1,5 +1,6 @@
 {
 	"name": "host",
+	"rate": 1000,
 	"exposes": {
 		"t1": "a1",
 		"t2": "a2",
