@@ -1,22 +1,8 @@
 {
-	"name": "host",
-	"rate": 1000,
-	"exposes": {
-		"t1": "a1",
-		"t2": "a2",
-		"t3": "a3"
-	},
-	"remotes": {
-		"r1": "app1"
-	},
-	"aliases": {
-		"~types": "./src/types",
-		"~config": "./src/config",
-		"~decorators": "./src/decorators",
-		"~file_data_creators": "./src/file_data_creators",
-		"~bd": "./src/bd",
-		"~modules": "./src/modules",
-		"~utils": "./src/utils",
-		"~fs": "./src/fs"
-	}
+  "name": "host",
+  "rate": 1000,
+
+  "remotes": {
+    "app1": "app1"
+  }
 }
