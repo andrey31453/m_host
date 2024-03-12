@@ -1,6 +1,6 @@
 import * as React from 'react'
 // @ts-ignore
-import App1_Header from 'app1/Header'
+const App1_Header = React.lazy(() => import('app1/Header'))
 
 const App = () => {
   return (
@@ -11,7 +11,9 @@ const App = () => {
 
       <hr />
 
-      <App1_Header />
+      <React.Suspense fallback='Loading Header'>
+        <App1_Header />
+      </React.Suspense>
     </>
   )
 }
