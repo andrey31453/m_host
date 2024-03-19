@@ -29,12 +29,13 @@ lerna-debug.log*
 /.vscode
 
 # generate
-./src/.bd
+src/.bd
 .eslintrc
 .prettierignore
 .prettierrc.json
 dev.dockerfile
 dev.sh
+prune.sh
 webpack.config.js
 webpack.config.local.js
 webpack.config.template.js
