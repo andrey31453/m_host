@@ -1,5 +1,11 @@
 import * as React from 'react'
 
 export const Test = () => {
-  return <div>Test1</div>
+  return (
+    <>
+      <hr />
+      <div>Test1</div>
+      <hr />
+    </>
+  )
 }

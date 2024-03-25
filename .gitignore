@@ -30,6 +30,7 @@ lerna-debug.log*
 
 # generate
 src/.bd
+.dockerignore
 .eslintrc
 .prettierignore
 .prettierrc.json

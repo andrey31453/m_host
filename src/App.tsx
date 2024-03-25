@@ -12,9 +12,8 @@ const App = () => {
   return (
     <>
       <h1 className='test'>Host</h1>
-      <hr />
+
       <Test />
-      <hr />
 
       <React.Suspense fallback='Loading Header'>
         <App1_Header />
